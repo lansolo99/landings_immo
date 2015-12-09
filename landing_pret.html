@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- Standard Meta -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Properties -->
+  <title>Prêt immobilier | Société Générale</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,100,300,500,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- Scripts -->
+
+	<script src="js/modernizr.js"></script>
+	<script src="https://static.societegenerale.fr/pri/contenu/js/jquery-1-4-2-min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/03-Divers/landing-page-toolbox/bottin-popin.js"></script>
+
+	<script type="text/javascript">
+	var xiti_xtpage = "landing_page::offre-immo::prospect-ppi-rachat-de-pret-042015";
+
+	function sendData( _xiti_xtpage_ ){
+	var mm_ = document.getElementById('date_m').value;
+	var jj_ = document.getElementById('date_j').value;
+
+	if(parseInt(mm_) < 10) { mm_ = '0'+parseInt(mm_); }
+	if(parseInt(jj_) < 10) { jj_ = '0'+parseInt(jj_); }
+
+	var c1_ = document.getElementById('civil_mr').checked;
+	var c2_ = document.getElementById('civil_mme').checked;
+
+	var n_ = document.getElementById('nom_').value;
+	var p_ = document.getElementById('prenom_').value;
+	var d_ = jj_+'/'+mm_+'/'+document.getElementById('date_a').value;
+	var e_ = document.getElementById('email_').value;
+	var ok_ = true;
+
+	if(!c1_ && !c2_) { alert('Merci de saisir votre civilit\351'); ok_ = false; } else { var c_; if(c1_) c_ = 'Monsieur'; else c_='Madame'; }
+
+	// check data === //
+	if(n_.length<3) { alert('Merci de saisir votre nom'); ok_ = false; }
+	if(p_.length<3) { alert('Merci de saisir votre pr\351nom'); ok_ = false; }
+
+	var date_regex = /^(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/;
+	if(!(date_regex.test(d_))) { alert('Merci de saisir votre date de naissance'); ok_ = false;  }
+
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e_)) {} else { alert('Merci de saisir un email valide'); ok_ = false; }
+
+	// alert('https://particuliers.societegenerale.fr/prendre_rendez_vous_en_agence.html#d='+c_+'|'+n_+'|'+p_+'|'+d_+'|'+e_+'|non|ouvrir-un-compte');
+
+	if (ok_) {
+			// document.location='https://particuliers.societegenerale.fr/prendre_rendez_vous_en_agence.html#d='+c_+'|'+n_+'|'+p_+'|'+d_+'|'+e_+'|non|ouvrir-un-compte';
+			_url_ = 'https://fc1.1bis.com/societegenerale3/?path=eip&rdv=1&obj=3&d='+c_+'|'+n_+'|'+p_+'|'+d_+'|'+e_+'|non|0';
+			var _CIDs_ ='';
+			_CIDs_ = return_xiti_CID_list();
+			if(_CIDs_!='') _url_+= '&src='+_CIDs_;
+			LoadCarte( _url_ , _xiti_xtpage_ );
+			}
+	return true;
+	}
+	var xiti_xtpage = "landing_page::offre-xxx::landing-xxx";
+	</script>
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+	   $('.cookieCntr .close').click(function (e) {
+			e.preventDefault();
+			$(this).parent().remove();
+		});
+	});
+	</script>
+
+</head>
+<body>
+				<!-- Google Tag Manager -->
+				<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WD4GX8"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-WD4GX8');</script>
+				<!-- End Google Tag Manager -->
+
+				<!-- Cookie -->
+				<div class="cookieCntr">
+				  <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des services et offres adapt&eacute;s &agrave; vos centres d'int&eacute;r&ecirc;ts et r&eacute;aliser des statistiques de visites. Pour en savoir plus <a href="https://particuliers.societegenerale.fr/votre_site/configuration_securite/cnil.html">cliquez ici</a></p>
+				  <div class="close"><img src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABGAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkZFRTM0QUY5RUNEOTExRTRBNTAxRjBFQjE4RkMwN0U1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkZFRTM0QUZBRUNEOTExRTRBNTAxRjBFQjE4RkMwN0U1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RkVFMzRBRjdFQ0Q5MTFFNEE1MDFGMEVCMThGQzA3RTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RkVFMzRBRjhFQ0Q5MTFFNEE1MDFGMEVCMThGQzA3RTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAmQWRvYmUAZMAAAAABAwAVBAMGCg0AAAUEAAAFVwAABa4AAAYA/9sAhAAEAwMDAwMEAwMEBgQDBAYHBQQEBQcIBgYHBgYICggJCQkJCAoKDAwMDAwKDAwNDQwMEREREREUFBQUFBQUFBQUAQQFBQgHCA8KCg8UDg4OFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAAXAB4DAREAAhEBAxEB/8QAmgABAQEBAAAAAAAAAAAAAAAAAAQHBgEBAQEBAAAAAAAAAAAAAAAAAAEDBBAAAQMFAQAAAAAAAAAAAAAABDABAgAQIAMFBhEAAgEBBgcAAAAAAAAAAAAAAQMCBAARIUESBRAgMXHBIhQSAQAAAAAAAAAAAAAAAAAAADATAQEAAQMEAwEAAAAAAAAAAAERIQAgMRAwQXFRgeHx/9oADAMBAAIRAxEAAAHduXSEFwM3qs72AAP/2gAIAQEAAQUCpjBnJgYNsIt3Ncjz/ONEbL//2gAIAQIAAQUCU//aAAgBAwABBQJT/9oACAECAgY/Ak//2gAIAQMCBj8CT//aAAgBAQEGPwK0qMNH1RGqS87jadJBgNQsaprzA4qpKBJjuCbpyrMYCEO+dnUDqcq3Bfs5nUMBOB1eOb//2gAIAQEDAT8h03SPwWT9mgv+FyMevfx15dlMLgnP044M3XIpnP5IPseZt//aAAgBAgMBPyHuf//aAAgBAwMBPyHuf//aAAwDAQACEQMRAAAQm0nskk//2gAIAQEDAT8Q1X9LUKhyRYiDQRSJpuLwqqBWZCkDaLKdeI9FsrLgrTKhqiXNG2Yp5kzKTmjuv//aAAgBAgMBPxDU2Gnd/9oACAEDAwE/EO5//9k=" width="30" height="23" alt=""></div>
+			</div>
+
+
+				<!-- HEADER -->
+				<div class="segment header">
+					<div class="wrapper">
+						<a href="https://www.particuliers.societegenerale.fr/" id="logo"><img  src="images/logo_sg_ba.png" srcset="images/logo_sg_ba.png 1x, images/logo_sg_ba@2x.png 2x" alt="Société Générale"></a>
+						<img id="logo2" src="images/logo_escda_2016.png" srcset="images/logo_escda_2016.png 1x, images/logo_escda_2016@2x.png 2x" alt="Élu service client de l'année 2016">
+					</div>
+				</div>
+
+
+				<!-- THEME -->
+				<div class="segment theme">
+				<div id="theme">
+					<i class="icon-theme"></i>
+					ACQUÉRIR SA RÉSIDENCE PRINCIPALE
+				</div>
+				</div>
+
+				<!-- CONTACT -->
+				<div class="segment contact">
+					<div class="wrapper">
+						<h1>ET POUR VOUS ? <span>QUEL PRÊT IMMOBILIER ?</span></h1>
+						<p id="baseline">Un conseiller expérimenté vous fait sa meilleure proposition de prêt<sup>(1)</sup> selon votre situation</p>
+
+						<div id="main_image">
+							<img src="images/main_image.jpg" srcset="images/main_image.jpg 1x, images/main_image.jpg 2x" alt="Société Générale">
+						</div>
+
+
+								<div id="form">
+									<h2>Je prends rendez-vous pour l'étude de mon projet immobilier</h2>
+
+									<!-- Civilité -->
+									<div class="fieldGroup radio">
+										<label class="example-send-yourself-copy">
+									    <input type="radio" name="civil_" id="civil_mr" value="Mr">
+									    <span class="label-body">Madame</span>
+									  </label>
+										<label class="example-send-yourself-copy">
+									    <input type="radio" name="civil_" id="civil_mme" value="Mme">
+									    <span class="label-body">Monsieur</span>
+									  </label>
+									</div>
+
+									<!-- Nom/Prénom -->
+									<div class="fieldGroup">
+										<div class="row">
+											<div class="six columns">
+												<label for="exampleEmailInput">Nom</label>
+	      								<input class="u-full-width" type="text" id="nom_" placeholder="votre nom" onfocus="this.placeholder = ''" maxlength=50>
+											</div>
+											<div class="six columns">
+												<label for="exampleEmailInput">Prénom</label>
+	      								<input class="u-full-width" type="text" id="prenom_" placeholder="votre pr&eacute;nom" onfocus="this.placeholder = ''" maxlength=50>
+											</div>
+										</div>
+									</div>
+
+									<!-- Date de naissance -->
+									<div class="fieldGroup">
+											<label for="exampleEmailInput">Date de naissance</label>
+      								<input class="birthdate" type="text" id="date_j" placeholder="JJ" onfocus="this.placeholder = ''" >
+      								<input class="birthdate" type="text" id="date_m" placeholder="MM" onfocus="this.placeholder = ''" >
+      								<input class="birthdate year" type="text" id="date_a" placeholder="AAAA" onfocus="this.placeholder = ''" >
+									</div>
+
+									<!-- Email-->
+									<div class="fieldGroup">
+											<label for="exampleEmailInput">Email</label>
+      								<input class="u-full-width" type="text" id="email_" placeholder="Votre e-mail" onfocus="this.placeholder = ''">
+									</div>
+
+									<p class="form-mention">Tous les champs ci-dessus sont obligatoires.<br>Voir informations sur la protection des données personnelles.<sup>(2)</sup></p>
+									<a href="#" class="button u-full-width" id="cta_" onclick="sendData(xiti_xtpage);"><span>RENCONTRER UN CONSEILLER<i class="icon-arrow"></i></span></a>
+									<div class="row"><a href="https://particuliers.societegenerale.fr/emprunter/prets-immobiliers/demande-en-ligne.html" class="customer">Déja client ?</a></div>
+
+
+							  </div>
+					</div>
+				</div>
+
+				<!-- EXPERTISE -->
+				<div class="segment expertise">
+					<div class="wrapper">
+						<h1>Toute <span>l'expertise</span> Société Générale pour la <span>réussite</span>	 de votre projet !</h1>
+
+						<div class="row">
+							<div class="one-third column">
+								<img  src="images/icon-expertise-experience.png" srcset="images/icon-expertise-experience.png 1x, images/icon-expertise-experience@2x.png 2x" alt="Des conseillers expérimentés">
+								<p><span>Des conseillers expérimentés</span> pour des offres sur-mesure</p>
+							</div>
+							<div class="one-third column">
+								<img  src="images/icon-accompagnement-personnalise.png" srcset="images/icon-accompagnement-personnalise.png 1x, images/icon-accompagnement-personnalise@2x.png 2x" alt="Des conseillers expérimentés">
+								<p><span>Un accompagnement personnalisé</span> à toutes les étapes de votre projet</p>
+							</div>
+							<div class="one-third column">
+								<img  src="images/icon-agences.png" srcset="images/icon-agences.png 1x, images/icon-agences@2x.png 2x" alt="Plus de 2000 agences en France">
+								<p><span>Plus de 2000 agences en France</span> pour vous conseiller</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- FOOTER -->
+				<div class="segment footer">
+					<div class="wrapper">
+							<div class="logosgfooter"><img  src="images/logo_groupe_sg.png" srcset="images/logo_groupe_sg.png 1x, images/logo_groupe_sg@2x.png 2x" alt="Groupe Société Générale"></div>
+							<ul class="copyright">
+								<li><a href="https://particuliers.societegenerale.fr/votre_site/plan_de_site.html">Plan de site</a></li>
+								<li><a href="https://particuliers.societegenerale.fr/votre_site/nos_engagements.html">Nos engagements</a></li>
+								<li><a href="https://particuliers.societegenerale.fr/votre_site/informations_legales.html">Informations légales</a></li>
+								<li><a href="https://particuliers.societegenerale.fr/votre_site/configuration_securite.html">Configuration et sécurité</a></li>
+								<li><a href="https://particuliers.societegenerale.fr/votre_site/lexique_a.html">Lexique</a></li>
+								<li><a href="https://particuliers.societegenerale.fr/nous_contacter.html">Nous contacter</a></li>
+								<li>© Société Générale 2015</li>
+							</ul>
+					</div>
+				</div>
+
+				<!-- FOOTER -->
+				<div class="segment mentions_legales">
+					<div class="wrapper">
+						<div id="mentions_legales">
+							<dl class="mentions">
+								<dt>Sous réserve d'acceptation du dossier par Société Générale. Vous disposez d'un délai de 10 jours de réflexion avant d'accepter l'offre de prêt. La vente immobilière ou la construction est subordonnée à l'obtention du prêt nécessaire à son financement. A défaut, le vendeur est tenu de rembourser les sommes versées.</dt>
+								<dt>Ces informations sont nécessaires au traitement de votre demande. Elles seront enregistrées et traitées par Société Générale et pourront, de convention expresse, être transmises à des fins de gestion aux personnes morales de son Groupe ainsi qu'aux prestataires habilités, dans les conditions précisées dans les mentions légales. <br><br>
+									Protection des données personnelles : Ces informations sont nécessaires pour le traitement de votre demande de prise de rendez-vous avec un de nos conseillers. Vous pouvez vous faire communiquer et faire rectifier, le cas échéant, l’ensemble des informations vous concernant. Vous pouvez, pour motif légitime vous opposer à ce que ces informations fassent l’objet d’un traitement. Vos droits d’accès, de rectification et d’opposition peuvent être exercés en envoyant votre demande auprès de :  
+									Si vous détenez un compte à la Société Générale, auprès de votre Agence. 
+									Si vous ne détenez pas un compte Société Générale, par courrier à l’adresse suivante : Société Générale – DCM/CCM/E-BU – 75886 Paris Cedex 18
+									<br><br>
+									*Catégorie Banque – Étude Inference Operations – Viséo Conseil – mai à juillet 2015 – Plus d’infos sur : <a href="http://www.escda.fr/">www.escda.fr</a>.
+								</dt>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+
+</body>
+</html>

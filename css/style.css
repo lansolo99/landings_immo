@@ -258,7 +258,7 @@ label{
   background: #cb2323;
   color: #ffffff;
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 700;
   height: auto;
   padding: 7px;
   letter-spacing: normal;
@@ -598,4 +598,9 @@ label{
     right: -23px;
   }
 
+}
+
+
+.four.columns {
+  width: 30.6666666667%;
 }

@@ -587,5 +587,15 @@ label{
     height: auto;
   }
 
+}
+
+@media screen and (max-width:400px) {
+  #form .button{
+    font-size: 17px;
+  }
+
+  #form .button span i.icon-arrow:before{
+    right: -23px;
+  }
 
 }
